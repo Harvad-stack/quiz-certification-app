@@ -16,24 +16,25 @@ A Flask-based web application for conducting professional certification quizzes 
 
 ### 1. Clone the repository
 
-git clone https://github.com/Harvad-stack/quiz-certification-app.git
+-> git clone https://github.com/Harvad-stack/quiz-certification-app.git
 
-cd quiz-certification-app
+-> cd quiz-certification-app
 
 
 ### 2. Create virtual environment
 
-python -m venv venv
-source venv/bin/activate # On Windows: venv\Scripts\activate
+-> python -m venv venv
+
+-> source venv/bin/activate # On Windows: venv\Scripts\activate
 
 
 ### 3. Install dependencies
 
-pip install -r requirements.txt
+-> pip install -r requirements.txt
 
 ### 4. Run the application
 
-python app.py
+-> python app.py
 
 
 
@@ -108,5 +109,6 @@ Edit `static/css/style.css` - modify gradient colors in the `body` selector.
 - **Frontend**: HTML, CSS, JavaScript
 - **Certificate**: ReportLab
 - **Data Storage**: JSON, CSV
+
 
 
