@@ -8,7 +8,6 @@ A Flask-based web application for conducting professional certification quizzes 
 - ✅ Auto-generated PDF certificates
 - ✅ Score calculation and performance evaluation
 - ✅ Answer review after completion
-- ✅ CSV storage for results tracking
 - ✅ Responsive design for mobile and desktop
 - ✅ Random question ordering
 
@@ -96,6 +95,7 @@ Edit `static/css/style.css` - modify gradient colors in the `body` selector.
 - **Frontend**: HTML, CSS, JavaScript
 - **Certificate**: ReportLab
 - **Data Storage**: JSON, CSV
+
 
 
 
