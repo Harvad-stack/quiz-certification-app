@@ -61,7 +61,7 @@ The app will be available at `http://localhost:5000`
 - **50-79% (Good)**: Certification approved
 - **Below 50%**: Reattempt recommended
 
-## Deployment Options
+## Deployment
 
 ### Option 1: Deploy to Render (Recommended)
 
@@ -70,19 +70,6 @@ The app will be available at `http://localhost:5000`
 3. Create new Web Service
 4. Connect your GitHub repository
 5. Deploy automatically
-
-### Option 2: Deploy to PythonAnywhere
-
-1. Upload files to PythonAnywhere
-2. Configure web app in Web tab
-3. Set up WSGI configuration
-4. Reload and test
-
-### Option 3: Deploy to Heroku
-
-1. Install Heroku CLI
-2. Create `Procfile`: `web: gunicorn app:app`
-3. Deploy: `git push heroku main`
 
 ## Customization
 
@@ -109,6 +96,7 @@ Edit `static/css/style.css` - modify gradient colors in the `body` selector.
 - **Frontend**: HTML, CSS, JavaScript
 - **Certificate**: ReportLab
 - **Data Storage**: JSON, CSV
+
 
 
 
