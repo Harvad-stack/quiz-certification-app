@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz Results{% endblock %}
+
+{% block content %}
+<div class="result-section">
+    <h1>🎉 Quiz Completed!</h1>
+    
+    <div class="result-card">
+        <h2>Hello, {{ name }}!</h2>
+        
+        <div class="score-display">
+            <div class="score-circle {{ performance_class }}">
+                <span class="score-number">{{ score }}/{{ total }}</span>
+                <span class="percentage">{{ "%.2f"|format(percentage) }}%</span>
+            </div>
+        </div>
+        
+        <div class="performance-badge {{ performance_class }}">
+            {{ performance }}
+        </div>
+        
+        {% if percentage >= 50 %}
+        <div class="certificate-section">
+            <p>✅ Your certificate has been generated successfully!</p>
+            <a href="/download-certificate/{{ cert_filename }}" 
+               class="btn-download">Download Certificate 📄</a>
+        </div>
+        {% endif %}
+    </div>
+    
+    <div class="answers-review">
+        <h3>📊 Answer Review</h3>
+        {% for answer in answers %}
+        <div class="answer-item {% if answer.is_correct %}correct{% else %}incorrect{% endif %}">
+            <p class="answer-question">{{ loop.index }}. {{ answer.question }}</p>
+            <p class="answer-details">
+                Your answer: <strong>{{ answer.selected }}</strong>
+                {% if not answer.is_correct %}
+                | Correct answer: <strong>{{ answer.correct }}</strong>
+                {% endif %}
+                <span class="answer-icon">
+                    {% if answer.is_correct %}✓{% else %}✗{% endif %}
+                </span>
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div class="action-buttons">
+        <a href="/reset" class="btn-secondary">Take Quiz Again</a>
+        <a href="/" class="btn-primary">Back to Home</a>
+    </div>
+</div>
+{% endblock %}

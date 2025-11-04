@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Start Quiz - Certification App{% endblock %}
+
+{% block content %}
+<div class="welcome-section">
+    <h1>🎯 Professional Certification Quiz</h1>
+    <p class="subtitle">Test your knowledge and earn a certificate!</p>
+    
+    <div class="form-container">
+        <form method="POST" action="/start-quiz" id="startForm">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required 
+                       placeholder="Enter your full name">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address (Optional)</label>
+                <input type="email" id="email" name="email" 
+                       placeholder="your.email@example.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="department">Department/Course *</label>
+                <input type="text" id="department" name="department" required 
+                       placeholder="e.g., IT Department, Computer Science">
+            </div>
+            
+            <button type="submit" class="btn-primary">Start Quiz 🚀</button>
+        </form>
+    </div>
+    
+    <div class="info-box">
+        <h3>📋 Quiz Information</h3>
+        <ul>
+            <li>Total Questions: 10</li>
+            <li>Passing Score: 50%</li>
+            <li>Certificate: Auto-generated upon completion</li>
+            <li>Time: No time limit</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

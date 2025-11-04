@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What does CPU stand for?",
+    "options": {
+      "A": "Central Process Unit",
+      "B": "Central Processing Unit",
+      "C": "Computer Personal Unit",
+      "D": "Control Processing Unit"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which programming language is known as the 'language of the web'?",
+    "options": {
+      "A": "Python",
+      "B": "Java",
+      "C": "JavaScript",
+      "D": "C++"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What does HTML stand for?",
+    "options": {
+      "A": "Hyper Text Markup Language",
+      "B": "High Tech Modern Language",
+      "C": "Home Tool Markup Language",
+      "D": "Hyperlinks and Text Markup Language"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which data structure uses LIFO (Last In First Out)?",
+    "options": {
+      "A": "Queue",
+      "B": "Stack",
+      "C": "Array",
+      "D": "Tree"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "What is the time complexity of binary search?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(log n)",
+      "C": "O(n^2)",
+      "D": "O(1)"
+    },
+    "correct": "B"
+  },
+  {
+    "question": "Which of the following is NOT a Python data type?",
+    "options": {
+      "A": "List",
+      "B": "Dictionary",
+      "C": "Array",
+      "D": "Tuple"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What does SQL stand for?",
+    "options": {
+      "A": "Structured Query Language",
+      "B": "Simple Question Language",
+      "C": "Structured Question Language",
+      "D": "Simple Query Language"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "Which HTTP method is used to update a resource?",
+    "options": {
+      "A": "GET",
+      "B": "POST",
+      "C": "PUT",
+      "D": "DELETE"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "What is the output of: print(2 ** 3) in Python?",
+    "options": {
+      "A": "5",
+      "B": "6",
+      "C": "8",
+      "D": "9"
+    },
+    "correct": "C"
+  },
+  {
+    "question": "Which company developed the Java programming language?",
+    "options": {
+      "A": "Microsoft",
+      "B": "Sun Microsystems",
+      "C": "Apple",
+      "D": "IBM"
+    },
+    "correct": "B"
+  }
+]

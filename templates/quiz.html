@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Question {{ current }} - Quiz{% endblock %}
+
+{% block content %}
+<div class="quiz-section">
+    <div class="progress-bar">
+        <div class="progress" style="width: {{ (current/total)*100 }}%"></div>
+    </div>
+    
+    <div class="question-counter">
+        Question {{ current }} of {{ total }}
+    </div>
+    
+    <div class="question-container">
+        <h2 class="question-text">{{ question.question }}</h2>
+        
+        <form method="POST" action="/submit-answer" id="quizForm">
+            <div class="options-container">
+                {% for key, value in question.options.items() %}
+                <label class="option-label">
+                    <input type="radio" name="answer" value="{{ key }}" required>
+                    <span class="option-text">
+                        <strong>{{ key }}.</strong> {{ value }}
+                    </span>
+                </label>
+                {% endfor %}
+            </div>
+            
+            <button type="submit" class="btn-primary">
+                {% if current < total %}
+                    Next Question →
+                {% else %}
+                    Finish Quiz ✓
+                {% endif %}
+            </button>
+        </form>
+    </div>
+</div>
+{% endblock %}
