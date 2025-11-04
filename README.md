@@ -25,7 +25,7 @@ A Flask-based web application for conducting professional certification quizzes 
 
 -> python -m venv venv
 
--> source venv/bin/activate # On Windows: venv\Scripts\activate
+-> source venv\Scripts\activate
 
 
 ### 3. Install dependencies
@@ -109,6 +109,7 @@ Edit `static/css/style.css` - modify gradient colors in the `body` selector.
 - **Frontend**: HTML, CSS, JavaScript
 - **Certificate**: ReportLab
 - **Data Storage**: JSON, CSV
+
 
 
 
